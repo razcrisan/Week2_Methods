@@ -48,6 +48,8 @@ namespace Week2_Methods
             double expenses = double.Parse(Console.ReadLine());
 
             SavingsCalculator(income, expenses);
+
+            Console.WriteLine(EvenOrOdd(7));
         }
 
         //public static int Add(int firstNumber, int secondNumber)
@@ -90,6 +92,31 @@ namespace Week2_Methods
                 return 0;
             }
         }
+
+        public static string EvenOrOdd(int number)
+        {
+            string answer;
+            if (number % 2 == 0)
+            {
+                answer = "Your number is even";
+                return answer;               
+            }
+            else
+            {
+                answer = "Your number is odd";
+                return answer;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
 
 
     }
